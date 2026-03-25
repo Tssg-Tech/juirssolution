@@ -106,3 +106,17 @@ initTestimonials();
 window.addEventListener("resize", ()=>{
   initTestimonials();
 });
+
+
+
+// 
+// 
+function showing() {
+  let form = document.querySelector(".free-consult-fixed-div");
+  let overlay = document.querySelector(".blur-overlay");
+
+  let isOpen = form.classList.toggle("show");
+  overlay.classList.toggle("show");
+
+  document.body.style.overflow = isOpen ? "hidden" : "auto";
+}
