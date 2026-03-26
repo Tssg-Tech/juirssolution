@@ -94,7 +94,7 @@ a{
 
 /* Services */
 .servsection {
-  padding: 10px 15px;
+ padding: 10px 15px 80px;
   overflow-y: auto;
   flex: 1;
   font-size: 13px;
@@ -130,7 +130,9 @@ a{
   border-top: 1px solid #eee;
   background: #fafafa;
   font-size: 13px;
-      margin-bottom: 4rem;
+      /* margin-bottom: 4rem; */
+        position: sticky;   /* ✅ KEY FIX */
+  bottom: 50px;
 
 }
 
@@ -1453,22 +1455,22 @@ background: #A66A4A;
   border-radius: 50%;
 }
 
-.docreqs>.col-lg>div{
+.docreqs>.col-6>div{
 background-color: #fff;
 padding: 2rem 0;
 border-radius: 10px;
   transition:background-color 0.3s;
 text-align: center;  
 }
-.docreqs>.col-lg>div:hover{
+.docreqs>.col-6>div:hover{
 background-color: var(--gold);
 color: #fff;
 }
-.docreqs>.col-lg>div img{
+.docreqs>.col-6>div img{
   transition: 0.6s;
   width: 100px;
 }
-.docreqs>.col-lg>div:hover img{
+.docreqs>.col-6>div:hover img{
 filter: brightness(0) invert(1);
 transform: scale(0.75);
 }
