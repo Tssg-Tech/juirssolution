@@ -1791,7 +1791,7 @@ font-size: 3rem;
 .free-consult-fixed-div{
   position: fixed;
   top: 50%;
-right: -262px;
+right: calc(-100% + 55px);
 transform: translateY(-50%);
 display: flex;
 align-items: center;
@@ -1802,7 +1802,7 @@ z-index: 1021;
 }
 .free-consult-fixed-div h5{
  writing-mode: vertical-lr;
- background-color: #243E5C;
+ background-color: #A66A4A;
  transform: rotate(180deg);
  height: max-content;
  padding: 1rem 0.25rem;
