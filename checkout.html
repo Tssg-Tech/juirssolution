@@ -2,42 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <!-- ===== TOP HEADER (DESKTOP ONLY) ===== -->
-    <section class="topestnav d-md-block d-none">
-        <div class="container d-flex justify-content-between align-items-center py-2">
+     <!-- ===== TOP HEADER (DESKTOP ONLY) ===== -->
+  <section class="topestnav d-md-block d-none">
+    <div class="container d-flex justify-content-between align-items-center py-2">
 
-            <!-- Social Icons -->
-            <div class="social">
-                <i class="fab fa-facebook-f me-3"></i>
-                <i class="fab fa-twitter me-3"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
+      <!-- Social Icons -->
+      <div class="social">
+        <i class="fab fa-facebook-f me-3"></i>
+        <i class="fab fa-twitter me-3"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
 
-            <!-- Top Links -->
-             <div class="top-links">
+      <!-- Top Links -->
+      <div class="top-links">
         <a href="privacypolicy.html" class="text-white text-decoration-none ms-3">Privacy Policy</a>
         <a href="terms-conditions.html" class="text-white text-decoration-none ms-3">Terms & Conditions</a>
         <a href="faq.html" class="text-white text-decoration-none ms-3">FAQ</a>
       </div>
 
-        </div>
-    </section>
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar navbar-expand-xl navbar-dark custom-nav sticky-top">
+    </div>
+  </section>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-xl navbar-dark custom-nav sticky-top">
     <div class="container">
-
-
 
       <!-- Logo -->
       <a class="navbar-brand" href="index.html">
@@ -122,7 +121,7 @@
     </div>
   </nav>
 
-  <!-- add to cart start -->
+   <!-- add to cart start -->
 <div class="addtocart">
   <!-- Header -->
   <div class="cart-header">
@@ -173,176 +172,125 @@
   </div>
 </div>
   <!-- add to cart end -->
-  <!-- ===== our services sublist ===== -->
-    <section class="why-section py-5 servicessec">
-        <div class="container">
 
-           <!-- ===== IPR CONTENT SECTION ===== -->
+<!-- checkout section start -->
 
+<section class="checkout-section py-5">
+  <div class="container">
+    <div class="row g-4">
 
-      <div class="text-center mb-5">
-        <h2>Debt Settlement</h2>
-        <span class="practice-line"></span>
+      <!-- LEFT: BILLING DETAILS -->
+      <div class="col-lg-7">
+        <div class="checkout-box">
+          <h4 class="mb-4">Billing Details</h4>
+
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="First Name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Last Name" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="Phone Number" required>
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="3" placeholder="Address"></textarea>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="State">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Country">
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Pincode">
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="3" placeholder="Order Notes (optional)"></textarea>
+            </div>
+
+          </form>
+        </div>
       </div>
 
-      <!-- ===== IPR CONTENT WITH IMAGE ===== -->
-    <div class="ipr-content mb-5">
-        <div class="row align-items-start">
+      <!-- RIGHT: ORDER SUMMARY -->
+      <div class="col-lg-5">
+        <div class="checkout-box summary-box">
+          <h4 class="mb-4">Your Order</h4>
 
-          <!-- LEFT SIDE IMAGE -->
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <img src="images/legal_services1.jpg" alt="IPR Services" class="img-fluid rounded shadow legal_img">
+          <!-- ITEMS -->
+          <div class="summary-item">
+            <span>Trademark & Copyright</span>
+            <span>₹3,000</span>
           </div>
 
-          <!-- RIGHT SIDE CONTENT -->
-          <div class="col-lg-7">
-            <h3 class="mb-3">Intellectual Property Rights (IPR)</h3>
-
-            <p>
-              Intellectual Property Rights (IPR) protect creations of the mind such as brands,
-              logos, artistic works, inventions, designs, and literary content. In today’s
-              competitive business environment, protecting intellectual property is essential
-              for businesses, startups, entrepreneurs, and creative professionals.
-            </p>
-
-            <p>
-              At <strong>Juris Solution</strong>, we assist individuals, startups, and companies
-              in securing, protecting, and enforcing their intellectual property rights through
-              proper registration and legal protection.
-            </p>
-
-            <!-- <h5 class="mt-3">Key Benefits of IPR Protection</h5>
-
-            <ul>
-              <li>Exclusive legal ownership over your brand or creative work</li>
-              <li>Prevents unauthorized use or copying</li>
-              <li>Creates a valuable business asset</li>
-              <li>Builds brand trust and credibility</li>
-              <li>Enables licensing and franchising opportunities</li>
-              <li>Protects goodwill and reputation</li>
-              <li>Legal remedy in case of infringement</li>
-            </ul> -->
-
-            <p class="mt-2">
-              Without proper registration, enforcing intellectual property rights becomes difficult.
-            </p>
+          <div class="summary-item">
+            <span>Company Incorporation</span>
+            <span>₹3,000</span>
           </div>
 
-          <div class="my-5">
-  
-        <h2 class="text-center mb-4">Key Benefits of IPR Protection</h2>
+          <hr>
 
-        <span class="practice-line"></span>
-     <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Trademark & Copyright</a></div>
-        </div>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span>₹6,000</span>
+          </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Company Incorporation</a></div>
-        </div>
+          <div class="summary-item">
+            <span>Tax (5%)</span>
+            <span>₹300</span>
+          </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Registration & Licenses</a></div>
-        </div>
+          <div class="summary-item total">
+            <span>Total</span>
+            <span>₹6,300</span>
+          </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Possession Complaint</a></div>
-        </div>
+          <!-- PAYMENT OPTIONS -->
+          <div class="payment-method mt-4">
+            <h6 class="mb-3">Payment Method</h6>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Refund Complaint</a></div>
-        </div>
+            <label class="payment-option">
+              <input type="radio" name="payment" checked>
+              <span>UPI / Card / Net Banking</span>
+            </label>
+          </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Compensation Complaint</a></div>
-        </div>
+          <!-- BUTTON -->
+          <button class="place-order-btn mt-4 w-100" onclick="location.href='thankyou.html'">
+            Place Order <i class="fa-solid fa-arrow-right"></i>
+          </button>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Rera Agreement Drafting</a></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Civil Proceedings</a></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Debt Settlement</a></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Legal Consultation</a></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Anti-Harassment</a></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="practice-item"><a href="">Debt Reduction</a></div>
-        </div>
-      </div>
-  
-</div>
         </div>
       </div>
 
-            <div class="row g-4">
-<div class="text-center">
-        <h2>We Provide</h2>
-        <span class="practice-line"></span>
-      </div>
-    <div class="col-xl-4 col-md-6 ">
-        <div class="why-card why-card1 ">
-            <i class="fas fa-balance-scale"></i>
-            <h4>Civil Proceedings</h4>
-            <p>We represent clients in civil disputes including property, contracts, and legal claims, ensuring strong advocacy and favorable outcomes in court.</p>
-            <div>
-                <a href="trademark.html" class="frmsubmit">Read More</a>
-            </div>
-        </div>
     </div>
+  </div>
+</section>
 
-    <div class="col-xl-4 col-md-6 ">
-        <div class="why-card why-card2 ">
-            <i class="fas fa-user-tie"></i>
-            <h4>Legal Consultation</h4>
-            <p>Get expert legal advice tailored to your situation. Our professionals guide you with clear solutions to make informed decisions.</p>
-            <div>
-                <a href="trademark.html" class="frmsubmit">Read More</a>
-            </div>
-        </div>
-    </div>
+<!-- checkout section end -->
 
-    <div class="col-xl-4 col-md-6 ">
-        <div class="why-card why-card3 ">
-            <i class="fas fa-shield-alt"></i>
-            <h4>Anti-Harassment</h4>
-            <p>Protect yourself from workplace or personal harassment with our legal support. We ensure your rights are defended with strict legal action.</p>
-            <div>
-                <a href="trademark.html" class="frmsubmit">Read More</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="col-xl-4 col-md-6 ">
-        <div class="why-card why-card4 ">
-            <i class="fas fa-hand-holding-usd"></i>
-            <h4>Debt Reduction</h4>
-            <p>Struggling with financial burdens? We help negotiate and legally reduce your debts, offering structured solutions for financial relief.</p>
-            <div>
-                <a href="trademark.html" class="frmsubmit">Read More</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-        </div>
-    </section>
-
- <!-- whatsapp icon  start-->
-    <div class="call-icon">
+    <!-- whatsapp icon  start-->
+     <div class="call-icon">
         <a href=""><img src="images/icons8-call-48.png" alt=""></a>
     </div> 
     <div class="whatsapp-icon">
@@ -367,8 +315,9 @@
    
   </div>
   <!-- FREE CONSULTATION end -->
-     <!-- ===== FOOTER ===== -->
-   <footer class="footer pt-5">
+
+   <!-- ===== FOOTER ===== -->
+  <footer class="footer pt-5">
     <div class="container">
       <div class="row gy-4">
 
@@ -393,7 +342,7 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="privacypolicy.html">Privacy & Policies</a></li>
             <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
           </ul>
         </div>
 
@@ -439,10 +388,10 @@
   </footer>
 <div class="blur-overlay"></div>
 
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
+ <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+ </body>
 
 </html>

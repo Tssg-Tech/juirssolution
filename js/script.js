@@ -41,71 +41,6 @@ let visibleCards = 3;
 let totalSlides = 0;
 let autoSlideInterval;
 
-/* SET VISIBLE CARDS */
-function setVisibleCards(){
-  if(window.innerWidth <= 576){
-    visibleCards = 1;       // Mobile
-  }else if(window.innerWidth <= 992){
-    visibleCards = 2;       // Tablet
-  }else{
-    visibleCards = 3;       // Desktop
-  }
-}
-
-/* CREATE DOTS BASED ON VISIBLE CARDS */
-function createDots(){
-  dotsContainer.innerHTML = "";
-  totalSlides = Math.ceil(cards.length / visibleCards);
-
-  for(let i = 0; i < totalSlides; i++){
-    const dot = document.createElement("span");
-    if(i === 0) dot.classList.add("active");
-    dot.addEventListener("click", ()=>{
-      indexTest = i;
-      updateSlider();
-    });
-    dotsContainer.appendChild(dot);
-  }
-}
-
-/* UPDATE SLIDER */
-function updateSlider(){
-  const gap = 30;
-  const cardWidth = cards[0].offsetWidth + gap;
-  track.style.transform = `translateX(-${indexTest * cardWidth * visibleCards}px)`;
-
-  document.querySelectorAll(".testimonial-dots span")
-    .forEach(dot => dot.classList.remove("active"));
-
-  if(dotsContainer.children[indexTest]){
-    dotsContainer.children[indexTest].classList.add("active");
-  }
-}
-
-/* AUTO SLIDE */
-function startAutoSlide(){
-  clearInterval(autoSlideInterval);
-  autoSlideInterval = setInterval(()=>{
-    indexTest = (indexTest + 1) % totalSlides;
-    updateSlider();
-  }, 4000);
-}
-
-/* INIT */
-function initTestimonials(){
-  setVisibleCards();
-  indexTest = 0;
-  createDots();
-  updateSlider();
-  startAutoSlide();
-}
-
-initTestimonials();
-
-/* RESIZE FIX */
-window.addEventListener("resize", ()=>{
-  initTestimonials();
-});
 
 
 
@@ -119,4 +54,22 @@ function showing() {
   overlay.classList.toggle("show");
 
   document.body.style.overflow = isOpen ? "hidden" : "auto";
+}
+
+
+// 
+// 
+let form = document.querySelector(".addtocart");
+let overlay = document.querySelector(".blur-overlay");
+
+function openAddToCart() {
+  let Open = form.classList.add("show");
+  overlay.classList.toggle("show");
+  document.body.style.overflow = "hidden";
+}
+
+function closeAddToCart() {
+  let Open = form.classList.remove("show");
+  overlay.classList.toggle("show");
+  document.body.style.overflow = "auto";
 }

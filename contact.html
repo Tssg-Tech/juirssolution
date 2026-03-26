@@ -47,7 +47,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="userdashboard.html"><i class="fa-solid fa-user" style="font-size: 1.5rem; color: #fff;"></i></a>
+      <!-- <a href="userdashboard.html"><i class="fa-solid fa-user" style="font-size: 1.5rem; color: #fff;"></i></a> -->
 </div>
 
       <!-- Menu -->
@@ -109,16 +109,68 @@
           </li>
 
           <li class="nav-item">
-            <a class="btn login-btn ms-lg-2" href="login.html">Login</a>
+            <a class="btn login-btn ms-lg-2" href="login.html"><i class="fa-solid fa-user"></i><span class="d-lg-none"> Profile</span></a>
           </li>
 
-          <li class="nav-item d-none d-xl-block">
-            <a class="nav-link" href="userdashboard.html"><i class="fa-solid fa-user"></i></a>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a class="btn login-btn ms-lg-2" href="javascript:void(0)" onclick="openAddToCart()"><i class="fa-solid fa-cart-shopping"></i><span class="d-lg-none"> Cart</span></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+<!-- add to cart start -->
+<div class="addtocart">
+  <!-- Header -->
+  <div class="cart-header">
+    <h4>Add to Cart</h4>
+    <i class="fa-solid fa-xmark close-btn" onclick="closeAddToCart()"></i>
+  </div>
+
+  <!-- Cart Content -->
+  <div class="cart-body">
+
+    <!-- Services -->
+    <div class="servsection">
+      <div class="cart-item">
+        <span>Trademark & Copyright</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="fa-solid fa-trash remove-item"></i>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span>Company Incorporation</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="fa-solid fa-trash remove-item"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Section -->
+    <div class="totalsection">
+      <div>
+        <span>Subtotal</span>
+        <span>₹6,000</span>
+      </div>
+      <div>
+        <span>Tax (5%)</span>
+        <span>₹300</span>
+      </div>
+      <div class="total">
+        <span>Total</span>
+        <span>₹6,300</span>
+      </div>
+
+      <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+  </div>
+</div>
+  <!-- add to cart end -->
+
     <!-- ===== PAGE BANNER ===== -->
     <section class="page-banner">
         <div class="container text-center">
