@@ -7,6 +7,9 @@
 a{
   text-decoration: none !important;
 }
+.social a i{
+  color: #FFFFFF;
+}
 /* COLORS */
 :root {
   --gold: #A66A4A;
